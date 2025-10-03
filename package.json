@@ -28,6 +28,7 @@
     "node": ">=20.11.0"
   },
   "dependencies": {
+    "@rosen-bridge/handshake-rpc-scanner": "^0.1.0",
     "@rosen-bridge/scanner": "^8.0.0"
   }
 }

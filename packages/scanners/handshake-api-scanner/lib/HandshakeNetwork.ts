@@ -107,8 +107,7 @@ export class HandshakeNetwork extends AbstractNetworkConnector<HandshakeTransact
     for (const txid of block.tx) {
       const tx = await this.rpcCall<HandshakeTransaction>('getrawtransaction', [
         txid,
-        true,
-        blockHash // Include blockHash parameter to help locate the transaction
+        true
       ]);
       transactions.push(tx);
     }

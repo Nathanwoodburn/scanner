@@ -15,7 +15,8 @@
     "prettify": "prettier --write . --ignore-path ./.gitignore",
     "release": "npm run test -- --run && npm run build && npm publish --access public",
     "test": "NODE_OPTIONS=--loader=extensionless vitest",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test:scanner": "npx tsx tests/scannerTest.ts"
   },
   "devDependencies": {
     "@types/node": "^20.11.9",
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "^9.1.0",
     "extensionless": "^1.9.6",
     "prettier": "^3.2.4",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "vitest": "^1.2.2"
   },
